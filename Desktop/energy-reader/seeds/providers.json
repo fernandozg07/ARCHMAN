@@ -1,0 +1,163 @@
+[
+  {
+    "model": "renewables.provider",
+    "pk": 1,
+    "fields": {
+      "nome": "SolarTech Brasil",
+      "descricao": "Especialista em energia solar residencial e comercial com mais de 10 anos de experiência no mercado brasileiro.",
+      "site": "https://solartech.com.br",
+      "contato_email": "contato@solartech.com.br",
+      "contato_telefone": "+5511999887766",
+      "cobertura_ufs": ["SP", "RJ", "MG", "ES"],
+      "cobertura_ceps": [
+        {"inicio": "01000000", "fim": "19999999"},
+        {"inicio": "20000000", "fim": "28999999"},
+        {"inicio": "30000000", "fim": "39999999"}
+      ],
+      "modalidades": ["SOLAR_TELHADO", "SOLAR_FAZENDA", "GC"],
+      "cnpj": "12.345.678/0001-90",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "renewables.provider",
+    "pk": 2,
+    "fields": {
+      "nome": "EcoEnergia Sustentável",
+      "descricao": "Soluções completas em energia renovável: solar, eólica e geração compartilhada.",
+      "site": "https://ecoenergia.com.br",
+      "contato_email": "vendas@ecoenergia.com.br",
+      "contato_telefone": "+5511888776655",
+      "cobertura_ufs": ["SP", "PR", "SC", "RS"],
+      "cobertura_ceps": [
+        {"inicio": "01000000", "fim": "19999999"},
+        {"inicio": "80000000", "fim": "87999999"},
+        {"inicio": "88000000", "fim": "89999999"},
+        {"inicio": "90000000", "fim": "99999999"}
+      ],
+      "modalidades": ["SOLAR_TELHADO", "EOLICA", "GC", "REC"],
+      "cnpj": "23.456.789/0001-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "renewables.provider",
+    "pk": 3,
+    "fields": {
+      "nome": "Verde Energia",
+      "descricao": "Democratizando o acesso à energia limpa através de soluções inovadoras e acessíveis.",
+      "site": "https://verdeenergia.com.br",
+      "contato_email": "info@verdeenergia.com.br",
+      "contato_telefone": "+5511777665544",
+      "cobertura_ufs": ["SP", "RJ", "MG", "GO", "DF"],
+      "cobertura_ceps": [
+        {"inicio": "01000000", "fim": "19999999"},
+        {"inicio": "20000000", "fim": "28999999"},
+        {"inicio": "30000000", "fim": "39999999"},
+        {"inicio": "70000000", "fim": "76999999"}
+      ],
+      "modalidades": ["SOLAR_TELHADO", "SOLAR_FAZENDA"],
+      "cnpj": "34.567.890/0001-12",
+      "is_active": true,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 1,
+    "fields": {
+      "provider": 1,
+      "regiao": "Grande São Paulo",
+      "cep_mask": "01000-19999",
+      "preco_estimado_kwh": "0.4500",
+      "economia_estimada_percent": "15.00",
+      "modalidade": "SOLAR_TELHADO",
+      "sla_contato_horas": 24,
+      "investimento_minimo": "25000.00",
+      "payback_meses": 48,
+      "is_active": true
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 2,
+    "fields": {
+      "provider": 1,
+      "regiao": "Interior de São Paulo",
+      "cep_mask": "12000-19999",
+      "preco_estimado_kwh": "0.4200",
+      "economia_estimada_percent": "18.00",
+      "modalidade": "SOLAR_FAZENDA",
+      "sla_contato_horas": 48,
+      "investimento_minimo": "50000.00",
+      "payback_meses": 42,
+      "is_active": true
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 3,
+    "fields": {
+      "provider": 2,
+      "regiao": "São Paulo Capital",
+      "cep_mask": "01000-05999",
+      "preco_estimado_kwh": "0.4800",
+      "economia_estimada_percent": "12.00",
+      "modalidade": "GC",
+      "sla_contato_horas": 12,
+      "investimento_minimo": "15000.00",
+      "payback_meses": 36,
+      "is_active": true
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 4,
+    "fields": {
+      "provider": 2,
+      "regiao": "Rio de Janeiro",
+      "cep_mask": "20000-28999",
+      "preco_estimado_kwh": "0.4600",
+      "economia_estimada_percent": "14.00",
+      "modalidade": "SOLAR_TELHADO",
+      "sla_contato_horas": 24,
+      "investimento_minimo": "28000.00",
+      "payback_meses": 45,
+      "is_active": true
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 5,
+    "fields": {
+      "provider": 3,
+      "regiao": "Minas Gerais",
+      "cep_mask": "30000-39999",
+      "preco_estimado_kwh": "0.4000",
+      "economia_estimada_percent": "20.00",
+      "modalidade": "SOLAR_TELHADO",
+      "sla_contato_horas": 36,
+      "investimento_minimo": "22000.00",
+      "payback_meses": 40,
+      "is_active": true
+    }
+  },
+  {
+    "model": "renewables.offer",
+    "pk": 6,
+    "fields": {
+      "provider": 3,
+      "regiao": "Brasília e Entorno",
+      "cep_mask": "70000-76999",
+      "preco_estimado_kwh": "0.4300",
+      "economia_estimada_percent": "17.00",
+      "modalidade": "SOLAR_FAZENDA",
+      "sla_contato_horas": 48,
+      "investimento_minimo": "45000.00",
+      "payback_meses": 44,
+      "is_active": true
+    }
+  }
+]

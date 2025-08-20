@@ -1,0 +1,106 @@
+/* Energy Reader Admin - Tema Limpo */
+:root {
+    --primary: #343A40;
+    --secondary: #6C757D;
+    --light: #F8F9FA;
+    --white: #FFFFFF;
+    --border: #DEE2E6;
+    --text: #212529;
+    --success: #28A745;
+    --danger: #DC3545;
+}
+
+/* Header limpo */
+#header {
+    background: var(--white) !important;
+    border-bottom: 2px solid var(--border) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+#branding h1, #branding h1 a {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+}
+
+#branding h1:before {
+    content: "⚡ ";
+    color: #FF6B35;
+}
+
+#user-tools {
+    background: var(--light) !important;
+    border-radius: 4px !important;
+    padding: 8px 12px !important;
+}
+
+#user-tools a {
+    color: var(--secondary) !important;
+}
+
+/* Botões limpos */
+.button, input[type=submit] {
+    background: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+    border-radius: 4px !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.button:hover, input[type=submit]:hover {
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+}
+
+.button.default {
+    background: var(--success) !important;
+    border-color: var(--success) !important;
+}
+
+/* Links */
+a:link, a:visited {
+    color: var(--primary) !important;
+}
+
+/* Tabelas */
+.results th {
+    background: var(--light) !important;
+    color: var(--text) !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.results tr:nth-child(even) {
+    background: #FAFAFA !important;
+}
+
+/* Módulos */
+.module h2 {
+    background: var(--primary) !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+/* Breadcrumbs */
+div.breadcrumbs {
+    background: var(--light) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+/* Sidebar */
+#changelist-filter h2 {
+    background: var(--secondary) !important;
+    color: white !important;
+}
+
+/* Dashboard */
+body {
+    background: #FAFAFA !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.dashboard .module {
+    background: var(--white) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 4px !important;
+}

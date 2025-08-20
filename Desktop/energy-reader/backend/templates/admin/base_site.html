@@ -1,0 +1,25 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | Energy Reader Admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">Energy Reader Admin</a>
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'admin/css/energy-reader-theme.css' %}">
+<style>
+    #header {
+        background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%) !important;
+    }
+    
+    #branding h1 a {
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+</style>
+{% endblock %}
