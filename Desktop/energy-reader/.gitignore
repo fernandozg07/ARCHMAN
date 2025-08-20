@@ -1,0 +1,69 @@
+# Arquivos do sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Arquivos pessoais
+*.docx
+*.pdf
+*.zip
+*.rar
+*.lnk
+*.url
+desktop.ini
+
+# Diretórios do sistema Windows
+AppData/
+Documents/
+Downloads/
+Pictures/
+Videos/
+Music/
+OneDrive/
+3D Objects/
+Contacts/
+Favorites/
+Links/
+Searches/
+Saved Games/
+IntelGraphicsProfiles/
+NTUSER.DAT*
+ntuser.*
+
+# Diretórios de configuração
+.android/
+.aws/
+.chocolatey/
+.cursor/
+.docker/
+.expo/
+.fly/
+.railway/
+.vscode/
+.gitconfig
+.lesshst
+.node_repl_history
+.python_history
+.viminfo
+
+# Projetos antigos
+../*/
+../../*/
+
+# Backend
+backend/db.sqlite3
+backend/staticfiles/
+backend/media/
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/.env
+backend/venv/
+
+# Mobile
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/*.log
+mobile/.env
